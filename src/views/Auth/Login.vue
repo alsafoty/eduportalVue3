@@ -222,7 +222,7 @@ const handleConfirm = () => {
       showRegister.value = false;
     })
     .catch((error) => {
-      if (error.response.status === 409) {
+      if (error.response.status === 400) {
         alert("Username or ID already exists");
       }
       console.log(error);
