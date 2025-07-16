@@ -269,6 +269,7 @@ const courses = ref([]);
 const id = ref(localStorage.getItem("id"));
 const aboutActive = ref(true);
 const coursesActive = ref(false);
+
 onMounted(() => {
   document.title = "EduPortal | Profile";
 
